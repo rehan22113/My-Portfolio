@@ -4,7 +4,7 @@ Muhammad Rehan
 
     Initial work - eCommerce-UI  (https://github.com/rehan22113/eCommerce-UI)
     Released on cloud-provider (Cloud provider)
-    My professional profile on LinkedIn 
+    My professional profile on LinkedIn https://www.linkedin.com/in/rao-rehan/
 
 Showcase
 
