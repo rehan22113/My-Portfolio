@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+Author
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Muhammad Rehan
 
-## Available Scripts
+    Initial work - eCommerce-UI  (https://github.com/rehan22113/eCommerce-UI)
+    Released on cloud-provider (Cloud provider)
+    My professional profile on LinkedIn 
 
-In the project directory, you can run:
+Showcase
 
-### `npm start`
+This project was designed to demonstrate:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    Technology 1
+        React js
+    Technology 2
+        Node js (express)
+    Technology 3
+        Mongodb database
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    
 
-### `npm test`
+Usage example
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+MacOS & Linux:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm start
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Development setup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npm install
+npm i
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Running the tests
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Built With
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    npm - Dependency Management
+    Vercel - live on vercel (mrehan.vercel.app)
 
-### Code Splitting
+Release History
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    0.1.1
+        CHANGE: Update CV (module code remains unchanged)
+    0.1.0
+        The first proper release
+    0.0.1
+        Initial work
 
-### Analyzing the Bundle Size
+Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    Fork it (https://github.com/rehan22113/My-Portfolio/fork)
+    Create your feature branch (git checkout -b feature/fooBar)
+    Commit your changes (git commit -am 'Add some fooBar')
+    Push to the branch (git push origin feature/fooBar)
+    Create a new Pull Request
