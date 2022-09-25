@@ -269,7 +269,10 @@ const Home=(props)=>{
   <div className="container px-5 mx-auto">
   <motion.div whileHover={{ scale: 1.2 }} >
 
-  <HashLink to="/#contact" className="flex mx-auto mt-10 text-black bg-gradient-to-r from-[#fde801] to-yellow-400 border-0 py-2 px-8 focus:outline-none shadow-lg hover:bg-indigo-600 text-lg">HIRE ME</HashLink>
+  <HashLink to="/#contact">
+  <button className="flex mx-auto mt-10 text-center text-black bg-gradient-to-r from-[#fde801] to-yellow-400 border-0 py-2 px-8 focus:outline-none shadow-lg hover:bg-indigo-600 text-lg">HIRE ME
+  </button>
+  </HashLink>
   </motion.div>
   </div>
   </div>
