@@ -1,5 +1,4 @@
 import React,{useState} from 'react'
-import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import '../App.css'
 
@@ -26,42 +25,64 @@ const item = {
 const work=[
   {
     id:1,
-    name:"Working On it",
-    img:"https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80",
+    name:"eCommerce Web App",
+    img:"https://www.site-shot.com/cached_image/RumhWD5sEe2mDQJCrBEABg",
     alt:"Project 1",
-    category:"REACT JS"
+    category:"MERN APP",
+    url:"https://ratayo.vercel.app"
+
   },
   {
     id:2,
-    name:"Comming Soon",
-    img:"https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80",
-    alt:"Project 1",
-    category:"WORDPRESS"
+    name:"eCommerce Web App",
+    img:"https://www.site-shot.com/cached_image/LTUUcj6AEe2NOgJCrBEABA",
+    alt:"Project 2",
+    category:"MERN APP",
+    url:"https://taptechinc.vercel.app"
 
   },
   {
     id:3,
     name:"Comming Soon",
-    img:"https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80",
-    alt:"Project 1",
-    category:"REACT JS"
+    img:"https://www.site-shot.com/cached_image/f5IDfD54Ee2Q_QJCrBEABA",
+    alt:"Project 3",
+    category:"REACT JS",
+    url:"https://cryptogem.finance/"
 
   },
   {
     id:4,
     name:"Comming Soon",
-    img:"https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80",
-    alt:"Project 1",
-    category:"MERN APP"
+    img:"https://user-images.githubusercontent.com/59451476/169035401-50739003-f6e7-4f25-bdbd-248892aa1ee2.png",
+    alt:"Project 4",
+    category:"REACT JS",
+    url:"https://github.com/rehan22113/MaterialUI"
 
   },
-  
+  {
+    id:5,
+    name:"eCommerce - Wordpress",
+    img:"https://www.site-shot.com/cached_image/ScU7WD5xEe2qvgJCrBEABg",
+    alt:"Project 5",
+    category:"WORDPRESS",
+    url:"https://ratayo.vercel.app"
+
+  },
+  {
+    id:6,
+    name:"eCommerce - Wordpress",
+    img:"https://www.site-shot.com/cached_image/ZvdTDD5vEe28FwJCrBEABg",
+    alt:"Project 6",
+    category:"WORDPRESS",
+    url:"https://ramegamart.com/"
+
+  },
+   
 ]
 
 const OurWork=()=>{
   const [filter, setFilter] = useState({
-    work,
-    classes:""
+    work
   });
   const filterProject=(e)=>{
     const newWork=work.filter((val,index)=>{
@@ -109,13 +130,13 @@ const OurWork=()=>{
       
         <div>
           <div className="w-full image-cover rounded-md shadow-xl">
-            <img src={e.img} alt={e.alt} className="group-hover:opacity-60" />
+            <img src={e.img} alt={e.alt} className="group-hover:opacity-60 h-[550px]" />
           </div>
         </div>
         <div className="absolute opacity-0 fd-sh group-hover:opacity-100">
-          <span className="text-3xl font-bold text-gray-500 tracking-wider leading-relaxed font-sans">{e.name}</span> 
+          <span className="text-2xl font-bold text-black tracking-wider leading-relaxed">{e.name}</span> 
           <div className="pt-8 text-center">
-            <Link to="/" className="text-center rounded-md p-4 bg-yellow-300  text-gray-700 font-bold text-lg">Open To Browser</Link>
+            <a href={e.url} className="text-center p-4 bg-black text-white font-bold text-lg">Open To Browser</a>
           </div>
         </div>
       </div>
