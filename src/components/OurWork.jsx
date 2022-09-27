@@ -65,13 +65,13 @@ const work=[
     img:"https://www.site-shot.com/cached_image/ScU7WD5xEe2qvgJCrBEABg",
     alt:"Project 5",
     category:"WORDPRESS",
-    url:"https://ratayo.vercel.app"
+    url:"https://mamazlove.com"
 
   },
   {
     id:6,
     name:"eCommerce - Wordpress",
-    img:"https://www.site-shot.com/cached_image/ZvdTDD5vEe28FwJCrBEABg",
+    img:"https://www.site-shot.com/cached_image/TcP4ED6BEe2QuAJCrBEABg",
     alt:"Project 6",
     category:"WORDPRESS",
     url:"https://ramegamart.com/"
