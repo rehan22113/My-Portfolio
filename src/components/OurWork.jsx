@@ -1,6 +1,12 @@
-import React,{useState} from 'react'
+import React,{ useState,Suspense} from 'react'
 import { motion } from 'framer-motion'
 import '../App.css'
+
+import pic1 from '../assets/images/pic1-min.png'
+import pic2 from '../assets/images/pic2-min.png'
+import pic3 from '../assets/images/pic3-min.png'
+import pic4 from '../assets/images/pic4-min.png'
+import pic5 from '../assets/images/pic5-min.png'
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -25,8 +31,8 @@ const item = {
 const work=[
   {
     id:1,
-    name:"eCommerce Web App",
-    img:"https://www.site-shot.com/cached_image/RumhWD5sEe2mDQJCrBEABg",
+    name:"Ratayo -eCommerce Web App",
+    img:pic1,
     alt:"Project 1",
     category:"MERN APP",
     url:"https://ratayo.vercel.app"
@@ -34,8 +40,8 @@ const work=[
   },
   {
     id:2,
-    name:"eCommerce Web App",
-    img:"https://www.site-shot.com/cached_image/LTUUcj6AEe2NOgJCrBEABA",
+    name:"Taptech Electronic Card",
+    img:pic2,
     alt:"Project 2",
     category:"MERN APP",
     url:"https://taptechinc.vercel.app"
@@ -43,16 +49,16 @@ const work=[
   },
   {
     id:3,
-    name:"Comming Soon",
-    img:"https://www.site-shot.com/cached_image/f5IDfD54Ee2Q_QJCrBEABA",
+    name:"Azgarty Mobile App - Landing Page",
+    img:pic3,
     alt:"Project 3",
     category:"REACT JS",
-    url:"https://cryptogem.finance/"
+    url:"https://azgarty.vercel.app/"
 
   },
   {
     id:4,
-    name:"Comming Soon",
+    name:"React Native - Landing Page",
     img:"https://user-images.githubusercontent.com/59451476/169035401-50739003-f6e7-4f25-bdbd-248892aa1ee2.png",
     alt:"Project 4",
     category:"REACT JS",
@@ -61,17 +67,18 @@ const work=[
   },
   {
     id:5,
-    name:"eCommerce - Wordpress",
-    img:"https://www.site-shot.com/cached_image/ScU7WD5xEe2qvgJCrBEABg",
+    name:"Mamaz Love - Online Shopping",
+    img:pic4,
     alt:"Project 5",
     category:"WORDPRESS",
-    url:"https://mamazlove.com"
+    url:"https://mamazlove.com/"
+
 
   },
   {
     id:6,
-    name:"eCommerce - Wordpress",
-    img:"https://www.site-shot.com/cached_image/TcP4ED6BEe2QuAJCrBEABg",
+    name:"Ramega Mart - eCommerce Webiste",
+    img:pic5,
     alt:"Project 6",
     category:"WORDPRESS",
     url:"https://ramegamart.com/"
@@ -129,12 +136,16 @@ const OurWork=()=>{
       <div className="shadow-lg group container rounded-lg bg-white  max-w-sm flex justify-center items-center mx-auto content-div">
       
         <div>
-          <div className="w-full image-cover rounded-md shadow-xl">
-            <img src={e.img} alt={e.alt} className="group-hover:opacity-60 h-[550px]" />
+          <div className="w-full rounded-md shadow-xl h-[500px] overflow-hidden">
+          <Suspense fallback={<div className='text-xl text-center'>Loading...</div>}>
+            <img src={e.img} alt={e.alt} className="group-hover:opacity-60 " />
+          </Suspense>
           </div>
         </div>
         <div className="absolute opacity-0 fd-sh group-hover:opacity-100">
-          <span className="text-2xl font-bold text-black tracking-wider leading-relaxed">{e.name}</span> 
+        <div className="flex flex-wrap w-80">
+          <span className="text-2xl text-center font-bold text-black tracking-wider leading-relaxed">{e.name}</span> 
+        </div>
           <div className="pt-8 text-center">
             <a href={e.url} className="text-center p-4 bg-black text-white font-bold text-lg">Open To Browser</a>
           </div>
