@@ -30,3 +30,8 @@
     .content-div:hover .fd-sh{ 
  opacity: 1;
     }
+    .box {
+      width: 150px;
+      height: 150px;
+      border-radius: 5%;
+    }
